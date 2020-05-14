@@ -110,11 +110,11 @@
      */
     function determineNullOrFalse($var) {
 
-        /* Set a variable to 0 if false and -1 if null, otherwise leave it unchanged */
-        if ($var === false) {
-            return 0;
-        } else if (is_null($var) || $var === NULL) {
+        /* Set a variable to -1 if null and 0 if false, otherwise leave it unchanged */
+         if (is_null($var) || $var === NULL) {
             return -1;
+        } else if ($var === false) {
+             return 0;
         } else {
             return $var;
         }

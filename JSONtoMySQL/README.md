@@ -10,6 +10,9 @@ Decodes the JSON file and stores the appropriate data in respective variables, w
 ### db.php
 Establishes a connection to the MySQL database.
 
+#### Note
+The function `determineNullOrFalse()` takes a variable and sets it to -1 if null or 0 if false.  If the value of the variable is neither, it will remain unchanged.  This is due to the fact that the data from the decoded JSON file stores both null and false values as empty strings, even though the underlying data type is still either null or false.  As of such, this function provides a clear distinction between these two values.
+
 ### json/FullMenu_response.json
 Includes the JSON data required for insertion to the MySQL table.
 
