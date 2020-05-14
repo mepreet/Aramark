@@ -19,6 +19,12 @@ Includes the JSON data required for insertion to the MySQL table.
 ### json/FullMenu_response.txt
 A plain-text version of `FullMenu_response.json`.
 
+### json/FullMenu_response-Formatted.json
+An easy-to-read hierarchical version of `FullMenu_response.json`
+
+### json/FullMenu_response-Formatted.txt
+A plain-text version of `FullMenu_response-Formatted.json`.
+
 ___
 
-Updated 05/13/2020
+Updated 05/14/2020
