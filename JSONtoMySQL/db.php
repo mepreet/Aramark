@@ -14,7 +14,3 @@
     die( 'ERROR: ' . $link->error . PHP_EOL);
     $link->real_connect($hostname,  $username, $password, $database) ||
     die( 'ERROR: ' . $link->error . PHP_EOL);
-
-    /* Confirm established connection */
-    echo "Success: A proper connection to MySQL was made!" . PHP_EOL;
-    echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL . PHP_EOL;

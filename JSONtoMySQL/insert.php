@@ -99,8 +99,7 @@
 
     }
 
-    /* Denote successful query and close the connection */
-    echo "Records created successfully!";
+    // Close the connection
     $link->close();
 
     /**
