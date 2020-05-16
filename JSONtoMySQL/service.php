@@ -22,3 +22,7 @@
 
     // Free result set
     $result -> free_result();
+
+    /* Denote successful query and close the connection */
+    echo "Records retrieved successfully!";
+    $link->close();
