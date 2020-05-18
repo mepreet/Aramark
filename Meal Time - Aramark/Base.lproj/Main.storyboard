@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -715,6 +715,7 @@ Dinnning Dollars: $233</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="AddtoCart:" destination="aQA-Qg-fg3" eventType="touchUpInside" id="9fu-iu-yLl"/>
                                     <segue destination="0C2-Sr-zjW" kind="show" id="Hqf-Az-iq6"/>
                                 </connections>
                             </button>
@@ -756,6 +757,7 @@ Dinnning Dollars: $233</string>
                     <navigationItem key="navigationItem" id="OJ2-pc-q8O"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yk-Z4-YOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aQA-Qg-fg3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5014" y="-222"/>
         </scene>
@@ -940,6 +942,7 @@ Bottled Water</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="AddToCart2:" destination="SGf-AH-H1N" eventType="touchUpInside" id="rp3-F6-byp"/>
                                     <segue destination="H2x-FO-cby" kind="show" id="zYd-wX-rhd"/>
                                 </connections>
                             </button>
@@ -950,6 +953,7 @@ Bottled Water</string>
                     <navigationItem key="navigationItem" id="lrk-BT-zj6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yth-ci-4f2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SGf-AH-H1N" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6712" y="-222"/>
         </scene>
@@ -1045,6 +1049,7 @@ Bottled Water</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkOut2:" destination="VM2-s5-qpF" eventType="touchUpInside" id="1Eu-PY-a1k"/>
                                     <segue destination="rqo-6s-dOs" kind="show" id="Jrp-DF-QSz"/>
                                 </connections>
                             </button>
@@ -1063,27 +1068,28 @@ Bottled Water</string>
                     <navigationItem key="navigationItem" id="37L-zb-ldB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd8-YC-KZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VM2-s5-qpF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7602.898550724638" y="-257.14285714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oc8-8T-AlM"/>
+        <segue reference="7p1-Et-znu"/>
+        <segue reference="jhp-P5-brJ"/>
+        <segue reference="uiK-xs-Ba2"/>
+        <segue reference="g0k-k7-Y1l"/>
+        <segue reference="RM4-nh-Yp6"/>
+        <segue reference="lGG-2q-mRW"/>
+        <segue reference="Jrp-DF-QSz"/>
+        <segue reference="qIt-8X-rNW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo_Aramark" width="119" height="119"/>
         <image name="Profile_Picture_James" width="105" height="105"/>
         <image name="Vespa_Logo" width="224" height="91"/>
         <image name="check-box" width="88" height="523"/>
-        <image name="circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="oc8-8T-AlM"/>
-        <segue reference="Hqf-Az-iq6"/>
-        <segue reference="jhp-P5-brJ"/>
-        <segue reference="uiK-xs-Ba2"/>
-        <segue reference="JlZ-4x-vgb"/>
-        <segue reference="RM4-nh-Yp6"/>
-        <segue reference="lGG-2q-mRW"/>
-        <segue reference="vS7-OQ-0y6"/>
-        <segue reference="qIt-8X-rNW"/>
-    </inferredMetricsTieBreakers>
 </document>
