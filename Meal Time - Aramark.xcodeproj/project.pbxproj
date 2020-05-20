@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		0EEC6FB9240D58D60084A1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC6FB8240D58D60084A1FF /* AppDelegate.swift */; };
 		0EEC6FBB240D58D60084A1FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC6FBA240D58D60084A1FF /* SceneDelegate.swift */; };
-		0EEC6FBD240D58D60084A1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC6FBC240D58D60084A1FF /* ViewController.swift */; };
 		0EEC6FC0240D58D60084A1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC6FBE240D58D60084A1FF /* Main.storyboard */; };
 		0EEC6FC2240D58D70084A1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC6FC1240D58D70084A1FF /* Assets.xcassets */; };
 		0EEC6FC5240D58D70084A1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC6FC3240D58D70084A1FF /* LaunchScreen.storyboard */; };
 		0EEC6FD0240D58D70084A1FF /* Meal_Time___AramarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC6FCF240D58D70084A1FF /* Meal_Time___AramarkTests.swift */; };
 		0EEC6FDB240D58D70084A1FF /* Meal_Time___AramarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC6FDA240D58D70084A1FF /* Meal_Time___AramarkUITests.swift */; };
+		E12B6892245BFF7B00A3C480 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B688E245BFF7600A3C480 /* ViewController.swift */; };
+		E12B6893245BFF7B00A3C480 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B688F245BFF7A00A3C480 /* Cart.swift */; };
+		E12B6894245BFF7B00A3C480 /* MealClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B6890245BFF7B00A3C480 /* MealClass.swift */; };
+		E12B6895245BFF7B00A3C480 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B6891245BFF7B00A3C480 /* Menu.swift */; };
+		E143AD512471FE690095B43B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143AD502471FE690095B43B /* Network.swift */; };
+		E16F45992474B33600671016 /* d41d8cd9.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E16F45982474B33500671016 /* d41d8cd9.gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		0EEC6FB5240D58D60084A1FF /* Meal Time - Aramark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Time - Aramark.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEC6FB8240D58D60084A1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EEC6FBA240D58D60084A1FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EEC6FBC240D58D60084A1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EEC6FBF240D58D60084A1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EEC6FC1240D58D70084A1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EEC6FC4240D58D70084A1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		0EEC6FD6240D58D70084A1FF /* Meal Time - AramarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meal Time - AramarkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEC6FDA240D58D70084A1FF /* Meal_Time___AramarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal_Time___AramarkUITests.swift"; sourceTree = "<group>"; };
 		0EEC6FDC240D58D70084A1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12B688E245BFF7600A3C480 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Aramark-zach/Meal Time - Aramark/ViewController.swift"; sourceTree = "<group>"; };
+		E12B688F245BFF7A00A3C480 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cart.swift; path = "../../Aramark-zach/Meal Time - Aramark/Cart.swift"; sourceTree = "<group>"; };
+		E12B6890245BFF7B00A3C480 /* MealClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealClass.swift; path = "../../Aramark-zach/Meal Time - Aramark/MealClass.swift"; sourceTree = "<group>"; };
+		E12B6891245BFF7B00A3C480 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = "../../Aramark-zach/Meal Time - Aramark/Menu.swift"; sourceTree = "<group>"; };
+		E143AD502471FE690095B43B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E16F45982474B33500671016 /* d41d8cd9.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = d41d8cd9.gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,7 @@
 				0EEC6FCE240D58D70084A1FF /* Meal Time - AramarkTests */,
 				0EEC6FD9240D58D70084A1FF /* Meal Time - AramarkUITests */,
 				0EEC6FB6240D58D60084A1FF /* Products */,
+				E16F45982474B33500671016 /* d41d8cd9.gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +112,11 @@
 			children = (
 				0EEC6FB8240D58D60084A1FF /* AppDelegate.swift */,
 				0EEC6FBA240D58D60084A1FF /* SceneDelegate.swift */,
-				0EEC6FBC240D58D60084A1FF /* ViewController.swift */,
+				E12B688F245BFF7A00A3C480 /* Cart.swift */,
+				E143AD4F2471FDDD0095B43B /* Models */,
+				E12B6890245BFF7B00A3C480 /* MealClass.swift */,
+				E12B6891245BFF7B00A3C480 /* Menu.swift */,
+				E12B688E245BFF7600A3C480 /* ViewController.swift */,
 				0EEC6FBE240D58D60084A1FF /* Main.storyboard */,
 				0EEC6FC1240D58D70084A1FF /* Assets.xcassets */,
 				0EEC6FC3240D58D70084A1FF /* LaunchScreen.storyboard */,
@@ -128,6 +143,14 @@
 			path = "Meal Time - AramarkUITests";
 			sourceTree = "<group>";
 		};
+		E143AD4F2471FDDD0095B43B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E143AD502471FE690095B43B /* Network.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +167,8 @@
 			dependencies = (
 			);
 			name = "Meal Time - Aramark";
+			packageProductDependencies = (
+			);
 			productName = "Meal Time - Aramark";
 			productReference = 0EEC6FB5240D58D60084A1FF /* Meal Time - Aramark.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +241,8 @@
 				Base,
 			);
 			mainGroup = 0EEC6FAC240D58D60084A1FF;
+			packageReferences = (
+			);
 			productRefGroup = 0EEC6FB6240D58D60084A1FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEC6FC5240D58D70084A1FF /* LaunchScreen.storyboard in Resources */,
+				E16F45992474B33600671016 /* d41d8cd9.gitignore in Resources */,
 				0EEC6FC2240D58D70084A1FF /* Assets.xcassets in Resources */,
 				0EEC6FC0240D58D60084A1FF /* Main.storyboard in Resources */,
 			);
@@ -259,9 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EEC6FBD240D58D60084A1FF /* ViewController.swift in Sources */,
 				0EEC6FB9240D58D60084A1FF /* AppDelegate.swift in Sources */,
+				E12B6895245BFF7B00A3C480 /* Menu.swift in Sources */,
+				E12B6893245BFF7B00A3C480 /* Cart.swift in Sources */,
+				E12B6892245BFF7B00A3C480 /* ViewController.swift in Sources */,
 				0EEC6FBB240D58D60084A1FF /* SceneDelegate.swift in Sources */,
+				E143AD512471FE690095B43B /* Network.swift in Sources */,
+				E12B6894245BFF7B00A3C480 /* MealClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

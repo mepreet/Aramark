@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -633,7 +633,7 @@ Dinnning Dollars: $233</string>
         <!--View Controller-->
         <scene sceneID="lIa-cA-aBT">
             <objects>
-                <viewController id="GaT-7s-K8n" sceneMemberID="viewController">
+                <viewController id="GaT-7s-K8n" customClass="ViewController" customModule="Meal_Time___Aramark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uv7-XE-ZNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -715,6 +715,7 @@ Dinnning Dollars: $233</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="addToCart:" destination="GaT-7s-K8n" eventType="touchUpInside" id="ehT-VF-ev9"/>
                                     <segue destination="0C2-Sr-zjW" kind="show" id="Hqf-Az-iq6"/>
                                 </connections>
                             </button>
@@ -956,7 +957,7 @@ Bottled Water</string>
         <!--View Controller-->
         <scene sceneID="sH9-zY-vqq">
             <objects>
-                <viewController id="H2x-FO-cby" sceneMemberID="viewController">
+                <viewController id="H2x-FO-cby" customClass="ViewController" customModule="Meal_Time___Aramark" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gsa-nI-QUB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1037,6 +1038,14 @@ Bottled Water</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCs-Kj-x3O">
+                                <rect key="frame" x="19" y="29" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <segue destination="0C2-Sr-zjW" kind="show" id="7p1-Et-znu"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-3V-r2p">
                                 <rect key="frame" x="261" y="619" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1045,15 +1054,8 @@ Bottled Water</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="checkOut:" destination="H2x-FO-cby" eventType="touchUpInside" id="Klg-11-E25"/>
                                     <segue destination="rqo-6s-dOs" kind="show" id="Jrp-DF-QSz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCs-Kj-x3O">
-                                <rect key="frame" x="19" y="29" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Back"/>
-                                <connections>
-                                    <segue destination="0C2-Sr-zjW" kind="show" id="7p1-Et-znu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1067,23 +1069,22 @@ Bottled Water</string>
             <point key="canvasLocation" x="7602.898550724638" y="-257.14285714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7p1-Et-znu"/>
+        <segue reference="lGN-Lz-OIC"/>
+        <segue reference="uiK-xs-Ba2"/>
+        <segue reference="g0k-k7-Y1l"/>
+        <segue reference="RM4-nh-Yp6"/>
+        <segue reference="lGG-2q-mRW"/>
+        <segue reference="Jrp-DF-QSz"/>
+        <segue reference="qIt-8X-rNW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo_Aramark" width="119" height="119"/>
         <image name="Profile_Picture_James" width="105" height="105"/>
         <image name="Vespa_Logo" width="224" height="91"/>
         <image name="check-box" width="88" height="523"/>
-        <image name="circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="oc8-8T-AlM"/>
-        <segue reference="Hqf-Az-iq6"/>
-        <segue reference="jhp-P5-brJ"/>
-        <segue reference="uiK-xs-Ba2"/>
-        <segue reference="JlZ-4x-vgb"/>
-        <segue reference="RM4-nh-Yp6"/>
-        <segue reference="lGG-2q-mRW"/>
-        <segue reference="vS7-OQ-0y6"/>
-        <segue reference="qIt-8X-rNW"/>
-    </inferredMetricsTieBreakers>
 </document>
