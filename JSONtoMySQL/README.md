@@ -22,7 +22,7 @@ The function `determineNull()` takes a variable and sets it to NULL if -1.  If t
 The function `determineNullOrBool()` takes an int variable and sets it to NULL if -1, FALSE if 0, or TRUE if 1.  If the value of the variable is neither, it will remain unchanged.  Similar to the `determineNull()` function, this is due to the way data is stored in the table via the `select.php` file.  However, this specific function is necessary due to the fact that fields containing booleans can also be NULL, so evaluation of a boolean checks for both NULL and boolean values within the underlying int to ensure a clear distinction.
 
 ### select_plain.php
-Reads from the MySQL table and forms the data into a JSON.  This file depends on `db.php` to make a connection to the database.
+Reads from the MySQL table and creates a JSON from the data.  This file depends on `db.php` to make a connection to the database.
 
 #### Note
 Unlike `select.php`, this file will not convert values read from the table to a specific data type.  Rather, all values will be returned as strings ("plain" values).
