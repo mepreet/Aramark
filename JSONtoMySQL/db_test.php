@@ -5,7 +5,7 @@
     $username = "rickyman_rmm429";
     $password = "rmm429";
     $database = "rickyman_aramark";
-    $table = "FullMenu";
+    $table = "FullMenu_TEST";
 
     /* Establish timeout duration and attempt to make connection */
     $timeout = 10; // 10 seconds for timeout

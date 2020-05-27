@@ -2,10 +2,13 @@
 Decodes a JSON file and stores the appropriate data in a MySQL table.
 
 ## Files
-This project contains five PHP files – three essential and two helper – and a JSON file located in the `json/` directory.
+This project contains six PHP files – three essential and three helper – and a JSON file located in the `json/` directory.
 
 ### db.php
-Establishes a connection to the MySQL database.
+Establishes a connection to the MySQL database and the `FullMenu` table.
+
+### db_test.php
+Establishes a connection to the MySQL database and the `FullMenu_TEST` table.
 
 ### insert.php
 Decodes the JSON file and stores the appropriate data in respective variables, which are then inserted into the MySQL table.  This file depends on `db.php` to make a connection to the database and the JSON file located in the `json/` directory.
