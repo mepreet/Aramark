@@ -91,11 +91,26 @@
                     $stmt->execute() ||
                     die( 'ERROR: ' . $stmt->error . PHP_EOL);
 
+                    /* Clear variables in current loop */
+                    $ProductId = $ProductImage = $ProductName = $ShortDescription = $DietaryInfo = $Serving = $Calories = $CaloriesFromFat = $TotalFat = $SaturatedFat =
+                        $TransFat = $Cholesterol = $Sodium = $TotalCarbs = $DietaryFiber = $Sugars = $Protein = $Ingredients = $error = $HideFromDigitalSignage =
+                        $ProductSort = $Price = $IsVegan = $IsVegetarian = $IsKosher = $IsHalal = $IsGlutenFree = $ContainsShellfish = $ContainsPeanuts =
+                        $ContainsTreeNuts = $ContainsMilk = $ContainsWheat = $ContainsSoy = $ContainsEggs = $ContainsFish = $IsDeemphasized = $Allergens = NULL;
+
                 }
+
+                // Clear variables in current loop
+                $SubCatName = $SubCatSort = NULL;
 
             }
 
+            // Clear variables in current loop
+            $StationId = $StationName = $StationSort = NULL;
+
         }
+
+        // Clear variable in current loop
+        $MealPeriod = NULL;
 
     }
 
@@ -103,16 +118,16 @@
     $link->close();
 
     /**
-     * Determine if a variable is null or false and set it appropriately
-     * @param $var The variable to evaluate
-     * @return int The new value of the variable
+     * Determine if a variable is NULL or FALSE and set it appropriately
+     * @param $var mixed The variable to evaluate
+     * @return int|mixed The new value of the variable
      */
     function determineNullOrFalse($var) {
 
-        /* Set a variable to -1 if null and 0 if false, otherwise leave it unchanged */
+        /* Set a variable to -1 if NULL or 0 if FALSE, otherwise leave it unchanged */
          if (is_null($var) || $var === NULL) {
             return -1;
-        } else if ($var === false) {
+        } else if ($var === FALSE) {
              return 0;
         } else {
             return $var;
