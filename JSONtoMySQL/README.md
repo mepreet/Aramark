@@ -2,7 +2,7 @@
 Decodes a JSON file and stores the appropriate data in a MySQL table.
 
 ## Files
-This project utilizes two PHP files and a JSON file located in the `json/` directory.
+This project contains five PHP files – three essential and two helper – and a JSON file located in the `json/` directory.
 
 ### db.php
 Establishes a connection to the MySQL database.
@@ -26,6 +26,9 @@ Reads from the MySQL table and forms the data into a JSON.  This file depends on
 
 #### Note
 Unlike `select.php`, this file will not convert values read from the table to a specific data type.  Rather, all values will be returned as strings ("plain" values).
+
+### truncate.php
+Clears all values from the MySQL table.  This file depends on `db.php` to make a connection to the database.
 
 ### json/FullMenu_response.json
 Includes the JSON data required for insertion to the MySQL table.
