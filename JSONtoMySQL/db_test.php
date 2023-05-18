@@ -3,7 +3,6 @@
     /* Database connection information */
     $hostname = "50.87.249.20:3306";
     $username = "rickyman_rmm429";
-    $password = "rmm429";
     $database = "rickyman_aramark";
     $table = "FullMenu_TEST";
 
